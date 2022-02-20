@@ -63,8 +63,12 @@ Refer to Kaggle Notebook https://www.kaggle.com/workab/flowers-classification-re
 
 ## Predictions on real images
 
+|marigold|rose|sunflower|
+| :-------------------------: | :-------------------------: | :-------------------------: |
+| ![1](Predictions/marigold_IMG_20211227_114656.jpg))  | ![rose](Predictions/rose_IMG_20220114_080043.jpg) |![sunflower](Predictions/sunflower_IMG_20200611_081818.jpg)|
 
-## Extended my Work to build Andriod application for Flower classification
+
+## Extended my Work to build Android application for Flower classification
   - Converted trained model to TFLite Format
   - Did setup for Android App in Android studio
   - apk files are present [here](https://github.com/ankita-2015/kaggle-Flower-Classification-on-TPU/tree/main/AndroidApp/APKs)
