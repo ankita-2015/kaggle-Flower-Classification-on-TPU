@@ -61,3 +61,10 @@ Refer to Kaggle Notebook https://www.kaggle.com/workab/flowers-classification-re
    - loss function = sparse_categorical_crossentropy
    - metrics = sparse_categorical_accuracy
 
+## Predictions on real images
+
+
+## Extended my Work to build Andriod application for Flower classification
+  - Converted trained model to TFLite Format
+  - Did setup for Android App in Android studio
+  - apk files are present in this repository at : location
