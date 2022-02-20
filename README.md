@@ -36,24 +36,28 @@ Refer to Kaggle Notebook https://www.kaggle.com/workab/flowers-classification-re
   - Added additional data
   - Data Augmentation done are:
     1. Spatial level Transforms:
-        - Random flip left right
-        - Random flip up down
-        - Random crop
+        - Random flip left right, Random flip up down, Random crop
     2. Pixel level Transforms :
-        - Random Saturation
-        - Random Contrast
-        - Adjust Gamma
-        - Random Brightness
+        - Random Saturation, Random Contrast, Adjust Gamma, Random Brightness
     3. Miscellaneous : 
-        - Transform Rotation
-        - Transform Shift
-        - Transform Shear 
-        - Transform Zoom 
+        - Transform Rotation, Transform Shift, Transform Shear, Transform Zoom 
 - **Model**
   - BaseModel with input image size of 224 X 224 and Added GlobalAveragePooling layer
   - Transfer learning over several models out which DenseNet201 performed best   
   - Ensemble Learning with 2 or more models
-    - used DenseNet201 and EfficientnetB7
+    - used DenseNet201 and EfficientnetB7 :
+        - instead of one network, we train two and then combine their probability distributions.
 
-- **Hyper-Parameters**
-  - Image Size, Batch Size, Epochs, Learning rate Types and Amount of Augmentation
+- **Training parameters**
+  - Hyper-parameters : Image Size, Batch Size, Epochs, Learning rate, Types and Amount of Augmentation
+  - used learning rate scheduling, for more stable training.
+      - High initial learning rates can make loss explode. It is usually better linearly to increase learning rate from very small value over the first ~5 iterations.
+        ```
+        LR_START = 0.00001
+        LR_MAX = 0.00005 * strategy.num_replicas_in_sync
+        ```
+        ![image](https://user-images.githubusercontent.com/29517840/154858360-c470ec56-df9b-433a-af53-cb6c13b74d71.png)
+   - optimizer = Adam 
+   - loss function = sparse_categorical_crossentropy
+   - metrics = sparse_categorical_accuracy
+
