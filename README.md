@@ -67,4 +67,4 @@ Refer to Kaggle Notebook https://www.kaggle.com/workab/flowers-classification-re
 ## Extended my Work to build Andriod application for Flower classification
   - Converted trained model to TFLite Format
   - Did setup for Android App in Android studio
-  - apk files are present in this repository at : location
+  - apk files are present [here](https://github.com/ankita-2015/kaggle-Flower-Classification-on-TPU/tree/main/AndroidApp/APKs)
