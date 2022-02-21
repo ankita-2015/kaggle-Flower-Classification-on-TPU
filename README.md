@@ -18,8 +18,8 @@ Each file contains the id, label and image.
   - (224 X 224 X 3)
   - (192 X 192 X 3)
 
-## Approach and pipeline: 
-Refer to Kaggle Notebook https://www.kaggle.com/workab/flowers-classification-reused/settings?scriptVersionId=88289988 for the approach and implementation.
+## Pipeline: 
+Refer to Kaggle Notebook : [here](https://www.kaggle.com/workab/flowers-classification/notebook) for the approach and implementation.
 
 ## Results
 
@@ -28,7 +28,7 @@ Refer to Kaggle Notebook https://www.kaggle.com/workab/flowers-classification-re
   | MobilenetV2 | 0.93745 |
   | DenseNet201 | 0.96971 |
   | EfficientNetB7 | 0.95150 |
-  | DenseNet201 + EfficientNetB7 | 0.98 |
+  | (0.62)*DenseNet201 + (1-0.62)*EfficientNetB7 | 0.97058 |
   
 ## Strategy
 - **Input Data Pipeline:**
