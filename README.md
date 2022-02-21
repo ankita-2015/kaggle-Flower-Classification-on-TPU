@@ -1,5 +1,5 @@
 # kaggle-Flower-Classification-on-TPU
-This Project is based in Kaggle's Competition : Flower classification on TPU
+This Project is based on Kaggle's Competition : Flower classification on TPU
 
 ## About Challenge
   - Classify 104 different types of flowers
